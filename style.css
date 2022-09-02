@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    /* färger */
+    --color-theme: #20d3c2;
+    --color-theme-light: #EDFCFA;
+    --color-theme-dark: #0e153d;
+    --color-dark: #080c24;
+    --color-white: #ffffff;
+    --color-grey-0: #aaaaaa;
+    --color-grey-1: #e3e3e3;
+    --color-grey-2: #eeeeee;
+    --color-grey-3: #cccccc;
+    --color-grey-4: #f6f6f6;
+    --color-product-instock: #82d8c6;
+    --color-product-outofstock: #fe6c6c;
+/* fonter */
+    --font-play: 'Play', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-size-14: 1.17rem;
+    --font-size-16: 1.33rem;
+    --font-size-18: 1.5rem;
+    --font-size-24: 2rem;
+    --font-size-36: 3rem;
+    --font-size-60: 5rem;
+/* border */
+    --border-radius-small: 8px;
+    --border-radius-medium: 25px;
+    --border-radius-rounded: 50%;
+}
