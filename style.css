@@ -33,3 +33,98 @@
     --border-radius-medium: 25px;
     --border-radius-rounded: 50%;
 }
+/* html general */
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+}
+
+/* top meny */
+
+.top-meny {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+}
+.top-meny > .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+/* länkar specifik */
+
+.top-meny .top-links {
+    display: none;
+}
+   
+.top-meny .top-links .site-links {
+    display: none;
+}
+    .top-meny .top-links a {
+        color: var(--color-white);
+        text-decoration: none;
+        margin: 1rem;
+        }
+            .top-meny .top-links a:hover {
+                color: var(--color-theme-dark);
+            }
+.top-meny .top-links .socials {
+    margin-left: 1rem;
+    font-size: var(--font-size-14);
+}
+    .top-meny .top-links .socials a {
+    margin: 0 0.1rem;
+    }
+        .top-meny .top-links .socials a:last-child {
+            margin: 0 0 0 0.3;
+        }
+
+/* dropdown knapp top */
+.top-meny .site-settings {
+    display: flex;
+}
+    .top-meny .dropdown-theme {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+    }
+        .top-meny .dropdown-theme button {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+        }
+            .top-meny .dropdown-theme button:hover {
+                color: var(--color-theme-dark);
+            }
+                .top-meny .dropdown-theme .dropdown-menu {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                    border: none;     
+                }
+                    .top-meny .dropdown-theme .dropdown-menu .dropdown-item {
+                        margin: 0;
+                        width: 100%;
+
+                    }
+                        .top-meny .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                            background-color: var(--color-theme-dark);
+                            color: var(--color-white);  
+                        }
+
+@media (min-width: 578px) {
+    .top-meny .top-links {
+    display: inline;
+    }
+}
+@media (min-width: 992px) {
+    .top-meny > .container {
+    justify-content: space-between;    
+    }
+.top-meny .top-links .site-links {
+    display: inline;
+    }
+}
