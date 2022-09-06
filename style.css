@@ -8,9 +8,9 @@
     --color-dark: #080c24;
     --color-white: #ffffff;
     --color-grey-0: #aaaaaa;
-    --color-grey-1: #e3e3e3;
-    --color-grey-2: #eeeeee;
-    --color-grey-3: #cccccc;
+    --color-grey-2: #e3e3e3;
+    --color-grey-3: #eeeeee;
+    --color-grey-1: #cccccc;
     --color-grey-4: #f6f6f6;
     --color-product-instock: #82d8c6;
     --color-product-outofstock: #fe6c6c;
@@ -50,10 +50,10 @@ html, body {
     padding-left: 1.8rem;
     padding-right: 1.8rem;
 }
-    .btn-theme:hover {
-        background-color: var(--color-theme-dark);
-        color: var(--color-white);
-    }
+.btn-theme:hover {
+    background-color: var(--color-theme-dark);
+    color: var(--color-white);
+}
 
 /* top meny */
 
@@ -213,12 +213,82 @@ border-bottom: 1px solid var(--color-grey-2);
                     align-items: center;
                 }
 
+/* intro content */
 
+.intro {
+    background-color: var(--color-grey-2);
+}
+.intro .container {
+    display: flex;
+    align-items: center;
+}
+/* text vänster */
+.intro .content h1 {
+    font-family: var(--font-play);
+    font-size: var(--font-size-60);
+    font-weight: var(--font-weight-regular);
+}
 
+    .intro .content span {
+        font-weight: var(--font-weight-bold);
+        color: var(--color-theme);
+    }
+        .intro .content p {
+            font-size: var(--font-size-16);
+        }
+/* content knapp */
+.container .btn-secondary {
+    background-color: var(--color-white);
+    color: var(--color-theme);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-medium);
+}
+.container .btn-secondary:hover {
+    background-color: var(--color-theme-dark);
+    color: var(--color-white);
+}
+/* rad meny info */
 
+.webinfo {
+    padding: 3rem 0;
 
+}
+.webinfo .container {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.webinfo .infobox {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    flex: 1;
+    background-color: var(--color-theme-light);
+    padding: 1rem;
+    border-radius: var(--border-radius-small);
+}
+.webinfo .infobox:hover {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+}
+    .webinfo .infobox img {
+        margin-right: 2rem;
+    }
+    .webinfo .infobox:hover img {
+        filter: brightness(1000%);
 
-
+    }
+        .webinfo .infobox h2 {
+            color: var(--color-theme);
+            font-size: var(--font-size-14);
+            font-weight: var(--font-weight-medium);
+        }
+        .webinfo .infobox:hover h2 {
+            color: var(--color-white);
+        }
 
 
 
