@@ -71,6 +71,9 @@ margin: 1rem 0;
     background-color: var(--color-theme-dark);
     color: var(--color-white);
 }
+.bg-theme {
+    background-color: var(--color-theme);
+}
 
 /* top meny */
 
@@ -188,6 +191,19 @@ background-color: var(--color-white);
 .main-meny .all-links i {
     font-size: var(--font-size-16);
 }
+    .main-meny .all-links #cart {
+        position: relative;
+    }
+        .main-meny .all-links #cart .badge {
+            background-color: var(--color-theme);
+            position: absolute;
+            top: -1.1rem;
+            left: 0.8rem;
+        }
+        .main-meny .all-links #cart:hover .badge {
+            background-color: var(--color-theme-dark);
+        }
+
 /* bot nav */
 .main-meny nav {
 border-top: 1px solid var(--color-grey-2);
@@ -308,10 +324,6 @@ border-bottom: 1px solid var(--color-grey-2);
         }
 /* grid */
 
-.devide {
-
-}
-
 .devide .grid {
 display: grid;
 gap: 0.7rem;
@@ -322,22 +334,63 @@ grid-template-rows: repeat(3, minmax(100px,249px));
         background-color: var(--color-grey-1);
         border-radius: var(--border-radius-small);
         overflow: hidden;
+        height: 100%;
+        width: 100%;
+        position: relative;
     }
 
         .devide .box-category .category-box {
+            position: absolute;
+            width: 50%;
+            left: 0px;
+            bottom: 0px;
+            border-radius: 0 var(--border-radius-small) 0 0;
             background-color: var(--color-theme-dark);
             color: var(--color-theme);
             padding: 0.5rem 1rem;
             font-weight: var(--font-weight-medium);
+            height: 40px;
         }
+        .devide .box-category:hover .category-box {
+            height: 75px;
+        }
+        .devide .box-category .category-box span {
+            display: block;
+            color: var(--color-white);
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+/* grid layout */
+#grid-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
 
+#grid-2 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
 
-
-
-
-
-
-
+#grid-3 {
+    grid-column: 4 / -1;
+    grid-row: 1 / 3;
+}
+#grid-4 {
+    grid-column: 1 / 3;
+    grid-row: 2 / -1;
+}
+#grid-5 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+#grid-6 {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+#grid-7 {
+    grid-column: 5 / -1;
+    grid-row: 3 / -1;
+}
 
 
 /* @media (min-width: 578px) {
