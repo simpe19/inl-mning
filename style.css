@@ -402,6 +402,17 @@ grid-template-rows: repeat(3, minmax(100px,249px));
 .new-arrivals {
     margin-top: 4rem;
 }
+    .new-arrivals .card {
+        position: relative;
+        height: 400px;
+        width: 350px;
+    }
+    .new-arrivals .card img {
+        height: 400px;
+    }
+    .new-arrivals .card .card-body {
+        position: absolute;
+    }
 
 /* @media (min-width: 578px) {
     .top-meny .top-links {
