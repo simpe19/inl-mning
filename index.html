@@ -11,7 +11,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="d-none">
+    <header class="">
         <div class="top-meny">
             <div class="container">
                 <div class="site-settings">
@@ -91,7 +91,7 @@
             </nav>
         </div>
     </header>
-    <section class="intro d-none">
+    <section class="intro">
         <div class="container">
             <div class="content">
                 <h1>Shopping is <span>MORE FUN</span></h1>
@@ -101,7 +101,7 @@
             <img src="bilder/Banner-thumb.svg" alt="persons">
         </div>
     </section>
-    <section class="webinfo d-none">
+    <section class="webinfo">
         <div class="container">
             <div class="infobox">
                 <img src="bilder/Group 1155.svg" alt="box">
@@ -133,7 +133,7 @@
             </div>
         </div>
     </section>
-    <section class="devide d-none">
+    <section class="devide">
         <div class="container">
             <div class="section ">
                 <h1>SHOP BY <span>CATEGORY</span></h1>
@@ -142,25 +142,25 @@
             </div>
             <div class="grid">
                 <a href="#" id="grid-1" class="box-category">
-                    <div class="category-box">Men</div></a>
+                    <div class="category-box">Men<span>21 products</span></div></a>
 
                     <a href="#" id="grid-2" class="box-category">
-                    <div class="category-box">Women</div></a>
+                    <div class="category-box">Women<span>41 products</span></div></a>
 
                     <a href="#" id="grid-3" class="box-category">
-                    <div class="category-box">Kids</div></a>
+                    <div class="category-box">Kids<span>7 products</span></div></a>
 
                     <a href="#" id="grid-4" class="box-category">
-                    <div class="category-box">Shoes</div></a>
+                    <div class="category-box">Shoes<span>22 products</span></div></a>
 
                     <a href="#" id="grid-5" class="box-category">
-                    <div class="category-box">Hats</div></a>
+                    <div class="category-box">Hats<span>21 products</span></div></a>
 
                     <a href="#" id="grid-6" class="box-category">
-                    <div class="category-box">Sunglasses</div></a>
+                    <div class="category-box">Sunglasses<span>6 products</span></div></a>
 
                     <a href="#" id="grid-7" class="box-category">
-                    <div class="category-box">Watches<span>Grejer</span>
+                    <div class="category-box">Watches<span>11 products</span>
                     </div></a>
             </div>
         </div>
@@ -174,32 +174,89 @@
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                  <div class="card">
-                        <img src="bilder/Product thumb.png"  alt="placeholder">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                  </div>
+                        <div class="card">
+                            <ul class="card-menu">
+                                <li><i class="fa-solid fa-circle instock"></i></li>
+                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-regular fa-magnifying-glass"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                            </ul>
+                                <img src="bilder/Product thumb.png"  alt="placeholder">
+                                <div class="card-body">
+                                    <h1 class="card-title">Blue silk flare sleeved top</h1>
+                                    <button disabled>fashion</button>
+                                    <p class="old-price">€50.00</p>
+                                    <div id="stars">
+                                        <p class="card-discount">€20.00</p>
+                                        <div>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-background"></div>
+                      </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                          <img src="bilder/Product thumb2.png"  alt="placeholder">
-                          <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                    </div>
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                            <img src="bilder/Product thumb2.png"  alt="placeholder">
+                            <div class="card-body">
+                                <h1 class="card-title">New look men's coat</h1>
+                                <button disabled>fashion</button>
+                                <p class="old-price">€30.00</p>
+                                <div id="stars">
+                                    <p class="card-discount">€25.00</p>
+                                    <div>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-background"></div>
                   </div>
-                  <div class="col">
-                    <div class="card">
-                          <img src="bilder/Product thumb3.png"  alt="placeholder">
-                          <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                    </div>
-                  </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <ul class="card-menu">
+                        <li><i class="fa-solid fa-circle outofstock"></i></li>
+                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-regular fa-magnifying-glass"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                    </ul>
+                        <img src="bilder/Product thumb3.png"  alt="placeholder">
+                        <div class="card-body">
+                            <h1 class="card-title">Circle pattern girls shirt</h1>
+                            <button disabled>fashion</button>
+                            <p class="old-price">€40.00</p>
+                            <div id="stars">
+                                <p class="card-discount">€25.00</p>
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-background"></div>
+              </div>
+        </div>
             </div>
         </div>
     </section>

@@ -74,7 +74,15 @@ margin: 1rem 0;
 .bg-theme {
     background-color: var(--color-theme);
 }
-
+.text-theme {
+    color: var(--color-theme);
+}
+.instock {
+    color: var(--color-product-instock);
+}
+.outofstock {
+    color: var(--color-product-outofstock);
+}
 /* top meny */
 
 .top-meny {
@@ -117,6 +125,7 @@ margin: 1rem 0;
         }
 
 /* dropdown knapp top */
+
 .top-meny .site-settings {
     display: flex;
 }
@@ -149,7 +158,9 @@ margin: 1rem 0;
                             background-color: var(--color-theme-dark);
                             color: var(--color-white);  
                         }
+
 /* main meny */
+
 .main-meny {
 background-color: var(--color-white);
 }
@@ -206,6 +217,7 @@ background-color: var(--color-white);
         }
 
 /* bot nav */
+
 .main-meny nav {
 border-top: 1px solid var(--color-grey-2);
 border-bottom: 1px solid var(--color-grey-2);
@@ -257,7 +269,9 @@ border-bottom: 1px solid var(--color-grey-2);
     display: flex;
     align-items: center;
 }
+
 /* text vänster */
+
 .intro .content h1 {
     font-family: var(--font-play);
     font-size: var(--font-size-60);
@@ -271,7 +285,9 @@ border-bottom: 1px solid var(--color-grey-2);
         .intro .content p {
             font-size: var(--font-size-16);
         }
+
 /* content knapp */
+
 .container .btn-secondary {
     background-color: var(--color-white);
     color: var(--color-theme);
@@ -286,6 +302,7 @@ border-bottom: 1px solid var(--color-grey-2);
     background-color: var(--color-theme-dark);
     color: var(--color-white);
 }
+
 /* rad meny info */
 
 .webinfo {
@@ -329,6 +346,7 @@ border-bottom: 1px solid var(--color-grey-2);
         .webinfo .infobox:hover h2 {
             color: var(--color-white);
         }
+
 /* grid */
 
 .devide .grid {
@@ -368,7 +386,9 @@ grid-template-rows: repeat(3, minmax(100px,249px));
             font-size: 0.8rem;
             margin-top: 0.5rem;
         }
+
 /* grid layout */
+
 #grid-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -402,18 +422,103 @@ grid-template-rows: repeat(3, minmax(100px,249px));
 .new-arrivals {
     margin-top: 4rem;
 }
+
+/* cards */
+
     .new-arrivals .card {
         position: relative;
         height: 400px;
-        width: 350px;
+        width: 400px;
+        overflow: hidden;
     }
     .new-arrivals .card img {
         height: 400px;
     }
     .new-arrivals .card .card-body {
         position: absolute;
+        bottom: 0;
+        height: 14%;
+        width: 100%;
+        color: var(--color-white);
+        z-index: 1;
+        transition: 0.3s;
+        font-size: 1rem;
     }
-
+    .new-arrivals .card:hover .card-body {
+        height: 40%;
+    }
+    .new-arrivals .card .card-body button {
+        background-color: transparent;
+        color: var(--color-white);
+        border: 1px solid var(--color-white);
+        font-size: 0.875rem;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+        margin: 0.5rem 0;
+    }
+    .new-arrivals .card .card-body .old-price {
+        text-decoration: line-through;
+        margin: 0;
+        padding: 0;
+    }
+        .new-arrivals .card .card-body .card-discount {
+        color: var(--color-theme);
+        font-weight: var(--font-weight-medium);
+        font-size: 1.5em;
+        margin: 0;
+        }
+        .new-arrivals .card .card-body h1 {
+            font-size: var(--font-size-18);
+            font-weight: var(--font-weight-regular);
+        }
+        .new-arrivals .card .card-background {
+            position: absolute;
+            bottom: 0;
+            height: 15%;
+            width: 100%;
+            background-color: var(--color-theme-dark);
+            opacity: 0.9;
+            transition: height 0.3s;
+        }
+        .new-arrivals .card:hover .card-background {
+            height: 100%;
+        }
+        .new-arrivals .card .card-menu {
+            position: absolute;
+            z-index: 1;
+            top: 101%;
+            right: 1rem;
+            list-style: none;
+            margin: auto;
+            padding: 0.5rem;
+            font-size: 1.25rem;
+            border-radius: var(--border-radius-medium);
+            background-color: var(--color-white);
+            transition: top 0.3s;
+        }
+        .new-arrivals .card:hover .card-menu {
+            top: 20px;
+            }
+            .new-arrivals .card .card-menu li a {
+                color: var(--color-grey-0);
+            }
+            .new-arrivals .card .card-menu li {
+                margin-top: 0.3rem;
+                margin-bottom: 0.3rem;
+                font-size: 1.1em;
+            }
+                .new-arrivals .card .card-menu li a:hover {
+                    color: var(--color-theme);
+                }
+#stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#stars i {
+    color: var(--color-theme);
+}
 /* @media (min-width: 578px) {
     .top-meny .top-links {
     display: inline;
