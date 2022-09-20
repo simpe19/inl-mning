@@ -532,8 +532,10 @@ grid-template-rows: repeat(3, minmax(100px,249px));
     justify-content: space-between;
 }
 .sale .sale30 {
-    width: 255px;
+    width: 275px;
     height: 100%;
+    padding-top: 100px;
+    text-align: center;
     background-color: var(--color-theme);
     color: var(--color-white);
 }
@@ -552,14 +554,15 @@ grid-template-rows: repeat(3, minmax(100px,249px));
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-regular);
 }
-#infot p {
+.infot {
     width: 445px;
     align-items: center;
     justify-content: center;
+}
+.infot p {
     font-size: var(--font-size-14);
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-regular);
-
 }
 
 /* @media (min-width: 578px) {
