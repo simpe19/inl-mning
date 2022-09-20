@@ -519,6 +519,49 @@ grid-template-rows: repeat(3, minmax(100px,249px));
 #stars i {
     color: var(--color-theme);
 }
+.sale {
+    background-color: var(--color-grey-1);
+}
+.sale .container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    height: 420px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.sale .sale30 {
+    width: 255px;
+    height: 100%;
+    background-color: var(--color-theme);
+    color: var(--color-white);
+}
+.sale30 h1{
+    font-family: var(--font-play);
+    font-size: var(--font-size-60);
+    font-weight: var(--font-weight-bold);
+}
+.sale30 span {
+    font-family: var(--font-play);
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-bold);
+}
+.sale p {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+}
+#infot p {
+    width: 445px;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-14);
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+
+}
+
 /* @media (min-width: 578px) {
     .top-meny .top-links {
     display: inline;
