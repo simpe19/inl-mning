@@ -519,6 +519,9 @@ grid-template-rows: repeat(3, minmax(100px,249px));
 #stars i {
     color: var(--color-theme);
 }
+
+/* sale 30 section */
+
 .sale {
     background-color: var(--color-grey-1);
 }
@@ -530,6 +533,7 @@ grid-template-rows: repeat(3, minmax(100px,249px));
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .sale .sale30 {
     width: 275px;
@@ -565,6 +569,80 @@ grid-template-rows: repeat(3, minmax(100px,249px));
     font-weight: var(--font-weight-regular);
 }
 
+/* flash sale */
+.flashsale1 {
+background-color: #0e153d;
+}
+
+.flashsale1 .container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    height: 420px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.container .flashsale {
+    background-color: var(--color-theme);
+    height: 275px;
+    width: 265px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    padding-top: 25px;
+    color: #ffffff;
+}
+.flashsale h1 {
+    font-family: var(--font-play);
+    font-size: 4rem;
+    font-weight: var(--font-weight-bold);
+}
+    .flashsale p {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-medium);
+    }
+.container .time {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+.time {
+    width: 545px;
+}
+.time .minuter {
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    padding: 10px;
+    border: 2px dotted #20d3c2;
+}
+ .time a {
+    position: relative;
+    top: 30px;
+    right: -175px;
+
+
+ }
+ .minuter h3 {
+    color: #20d3c2;
+    font-family: var(--font-play);
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-bold); 
+    padding: 0;
+    margin: 0;
+ }
+    .minuter p {
+        font-family: var(--font-roboto);
+        font-size: var(--font-size-14);
+        font-weight: var(--font-weight-regular);
+    }
 /* @media (min-width: 578px) {
     .top-meny .top-links {
     display: inline;
