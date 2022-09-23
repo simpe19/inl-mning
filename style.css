@@ -419,17 +419,20 @@ grid-template-rows: repeat(3, minmax(100px,249px));
     grid-column: 5 / -1;
     grid-row: 3 / -1;
 }
-.new-arrivals {
-    margin-top: 4rem;
-}
+
 
 /* cards */
 
+.new-arrivals {
+    margin-top: 4rem;
+}
     .new-arrivals .card {
         position: relative;
         height: 400px;
         width: 400px;
         overflow: hidden;
+        border: 1px solid #eeeeee;
+        background-color: var(--color-grey-3);
     }
     .new-arrivals .card img {
         height: 400px;
@@ -662,7 +665,7 @@ background-color: #0e153d;
                 position: relative;
             }
         
-                .topseller .card-box .category-box {
+                /* .topseller .card-box .category-box {
                     position: absolute;
                     width: 100%;
                     left: 0px;
@@ -674,7 +677,7 @@ background-color: #0e153d;
                     font-weight: var(--font-weight-medium);
                     height: 40px;
                     transition: 0.2s;
-                }
+                } */
 .topseller #card1 {
     grid-column: 1/3;
     grid-row: 1/3;
@@ -686,30 +689,33 @@ background-color: #0e153d;
     grid-column: 3/-1;
 
 } 
-/* cards test */
-/* .topseller .card-box {
+
+/* card stor topseller */
+
+.topseller .card {
     position: relative;
-    height: 100%;
-    width: 100%; 
+    height: 700px;
     overflow: hidden;
+    border: 1px solid #eeeeee;
+    background-color: var(--color-grey-3);
 }
-.topseller .card-box img {
-    height: 100%; 
+.topseller .card img {
+    height: 700px;
 }
-.topseller .card-box .card-body {
+.topseller .card .card-body {
     position: absolute;
     bottom: 0;
-    height: 14%;
+    height: 10%;
     width: 100%;
     color: var(--color-white);
     z-index: 1;
     transition: 0.3s;
     font-size: 1rem;
 }
-.topseller .card-box:hover .card-body {
-    height: 40%;
+.topseller .card:hover .card-body {
+    height: 30%;
 }
-.topseller .card-box .card-body button {
+.topseller .card .card-body button {
     background-color: transparent;
     color: var(--color-white);
     border: 1px solid var(--color-white);
@@ -718,34 +724,35 @@ background-color: #0e153d;
     padding-right: 0.9rem;
     margin: 0.5rem 0;
 }
-.topseller .card-box .card-body .old-price {
+.topseller .card .card-body .old-price {
     text-decoration: line-through;
     margin: 0;
     padding: 0;
 }
-.topseller .card-box .card-body .card-discount {
+.topseller .card .card-body .card-discount {
     color: var(--color-theme);
     font-weight: var(--font-weight-medium);
     font-size: 1.5em;
     margin: 0;
     }
-    .topseller .card-box .card-body h1 {
+    .topseller .card .card-body h1 {
         font-size: var(--font-size-18);
         font-weight: var(--font-weight-regular);
+        margin-bottom: 30px;
     }
-    .topseller .card-box .card-background {
+    .topseller .card .card-background {
         position: absolute;
         bottom: 0;
-        height: 15%;
+        height: 70px;
         width: 100%;
         background-color: var(--color-theme-dark);
         opacity: 0.9;
         transition: height 0.3s;
     }
-    .topseller .card-box:hover .card-background {
+    .topseller .card:hover .card-background {
         height: 100%;
     }
-    .topseller .card-box .card-menu {
+    .topseller .card .card-menu {
         position: absolute;
         z-index: 1;
         top: 101%;
@@ -758,20 +765,112 @@ background-color: #0e153d;
         background-color: var(--color-white);
         transition: top 0.3s;
     }
-    .topseller .card-box:hover .card-menu {
+    .topseller .card:hover .card-menu {
         top: 20px;
         }
-        .topseller .card-box .card-menu li a {
+        .topseller .card .card-menu li a {
             color: var(--color-grey-0);
         }
-        .topseller .card-box .card-menu li {
+        .topseller .card .card-menu li {
             margin-top: 0.3rem;
             margin-bottom: 0.3rem;
             font-size: 1.1em;
         }
-        .topseller .card-box .card-menu li a:hover {
+        .topseller .card .card-menu li a:hover {
                 color: var(--color-theme);
-            } */
+            }
+
+/* cards small */
+.topseller {
+    margin-top: 4rem;
+}
+.topseller #cardsmall {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    background-color: var(--color-grey-3);
+}
+.topseller #cardsmall img {
+    height: 350px;
+}
+.topseller #cardsmall .card-body {
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    color: var(--color-white);
+    z-index: 1;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+.topseller #cardsmall:hover .card-body {
+    height: 55%;
+}
+.topseller #cardsmall .card-body button {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    font-size: 0.875rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    margin: 0.5rem 0;
+}
+.topseller #cardsmall .card-body .old-price {
+    text-decoration: line-through;
+    margin: 0;
+    padding: 0;
+}
+.topseller #cardsmall .card-body .card-discount {
+    color: var(--color-theme);
+    font-weight: var(--font-weight-medium);
+    font-size: 1.5em;
+    margin: 0;
+    }
+    .topseller #cardsmall .card-body h1 {
+        font-size: var(--font-size-18);
+        font-weight: var(--font-weight-regular);
+        margin-bottom: 20px;
+    }
+    .topseller #cardsmall .card-background {
+        position: absolute;
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+        background-color: var(--color-theme-dark);
+        opacity: 0.9;
+        transition: height 0.3s;
+    }
+    .topseller #cardsmall:hover .card-background {
+        height: 100%;
+    }
+    .topseller #cardsmall .card-menu {
+        position: absolute;
+        z-index: 1;
+        top: 101%;
+        right: 1rem;
+        list-style: none;
+        margin: auto;
+        padding: 0.5rem;
+        font-size: 1.25rem;
+        border-radius: var(--border-radius-medium);
+        background-color: var(--color-white);
+        transition: top 0.3s;
+    }
+    .topseller #cardsmall:hover .card-menu {
+        top: 20px;
+        }
+        .topseller #cardsmall .card-menu li a {
+            color: var(--color-grey-0);
+        }
+        .topseller #cardsmall .card-menu li {
+            margin-top: 0.3rem;
+            margin-bottom: 0.3rem;
+            font-size: 1.1em;
+        }
+        .topseller #cardsmall .card-menu li a:hover {
+                color: var(--color-theme);
+            }
 
 
 
