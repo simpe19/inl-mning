@@ -872,9 +872,76 @@ background-color: #0e153d;
                 color: var(--color-theme);
             }
 
+/* breadcrumb */
 
+.site-info {
+    background-color: #50546e;
+    color: var(--color-theme);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.site-info .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .site-info h1 {
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-medium);
+        font-family: var(--font-roboto);
+        margin: 0;
+    }
+        .site-info .container nav ol {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .site-info .breadcrumb li {
+            color: var(--color-white);
+            font-size: 18px;
+        }
+            .site-info .breadcrumb li a {
+                color: var(--color-theme);
+                text-decoration: none;
+            }
+            .site-info .breadcrumb li a:hover {
+                text-decoration: underline;
+            }
 
+    /* formulär  */
 
+.signup-signin {
+    margin: 6rem 0;
+}  
+    .signup-signin .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        align-items: start;
+    }  
+    /* cards register */
+.signup-signin .card {
+    padding: 1.5rem;
+    border: none;
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-grey-4);
+}
+
+        .signup-signin .card .card-body h1 {
+            font-size: 1.5rem;
+            font-family: var(--font-roboto);
+            color: var(--color-theme-dark);
+            font-weight: var(--font-weight-medium);
+        }
+        .signup-signin .card .card-body .card-text{
+            margin: 1.5rem 0;
+            line-height: 2;
+        }
+            .signup-signin .card .card-body .card-text.text-small{
+                color: #777777;
+                font-size: 0.875rem;
+            }
 /* @media (min-width: 578px) {
     .top-meny .top-links {
     display: inline;
