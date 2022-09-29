@@ -58,7 +58,9 @@ html, body {
 .section p {
 margin: 1rem 0;
 }
+
 /* bootstrap knapp */
+
 .btn-theme {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -83,6 +85,13 @@ margin: 1rem 0;
 .outofstock {
     color: var(--color-product-outofstock);
 }
+
+/* forms */
+
+.required {
+    color: var(--color-theme);
+}
+
 /* top meny */
 
 .top-meny {
@@ -942,6 +951,30 @@ background-color: #0e153d;
                 color: #777777;
                 font-size: 0.875rem;
             }
+                .signup-signin .card .card-body .card-text a {
+                    color: var(--color-theme);
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+                .signup-signin .card .card-body .card-text a:hover {
+                    color: var(--color-theme-dark);
+                    text-decoration: underline;
+                }
+/* forms register */
+
+#register input {
+    display: block;
+    width: 100%;
+    border-radius: var(--border-radius-small);
+    padding: 0.5rem 0.8rem;
+    margin: 0.3rem 0;
+    border: none;
+}
+    #register input:focus {
+        outline: 0;
+        box-shadow: 0 0 2px 1px var(--color-grey-0);
+    }
+
 /* @media (min-width: 578px) {
     .top-meny .top-links {
     display: inline;
