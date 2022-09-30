@@ -1026,7 +1026,21 @@ background-color: #0e153d;
     .facegoog .facebook-button button:hover {
         filter: brightness(80%);
     }
+.foot {
+    background-color: #080C24;
+    height: 80px;
+}
 
+.foot .copy {
+    display: flex;
+    height: 80px;
+    color: #ffffff;
+    align-items: center;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-16);
+    
+}
 /* @media (min-width: 578px) {
     .top-meny .top-links {
     display: inline;
