@@ -180,6 +180,41 @@ background-color: var(--color-white);
 .main-meny .search {
     flex: 3;
 }
+    .main-meny .search #searchboxform {
+        border-radius: var(--border-radius-medium);
+        height: 45px;
+        margin: auto;
+        position: relative;
+    }
+    .main-meny .search #searchboxform input {
+        position: absolute;
+        border-radius: var(--border-radius-medium);
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: 1px solid var(--color-grey-2);
+        padding-left: 1.1rem;
+        transition: 0.1s;
+    }
+    .main-meny .search #searchboxform input:hover {
+        border: 1px solid var(--color-grey-0);
+    }
+        .main-meny .search #searchboxform button {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            width: 50px; 
+            height: 100%;
+            background-color: var(--color-theme);
+            color: #ffffff;
+            border: none;
+            border-radius:0 25px 25px 0;
+            transition: 0.3s;
+        }
+            .main-meny .search #searchboxform button:hover {
+                background-color: var(--color-theme-dark);
+                color: #ffffff;
+            }
 .main-meny .all-links {
     flex: 2;
     display: flex;
@@ -303,6 +338,11 @@ border-bottom: 1px solid var(--color-grey-2);
 .container .btn-secondary:hover {
     background-color: var(--color-theme-dark);
     color: var(--color-white);
+}
+
+.flashsale1 .container .btn-secondary:hover  {
+    background-color: var(--color-theme);
+    color: var(--color-white);   
 }
 
 /* rad meny info */
@@ -575,6 +615,7 @@ grid-template-rows: repeat(3, minmax(100px,249px));
 }
 
 /* flash sale */
+
 .flashsale1 {
 background-color: #0e153d;
 }
@@ -655,8 +696,10 @@ background-color: #0e153d;
         justify-content: center;
         display: grid;
         gap: 0.7rem;
-        grid-template-columns: repeat(4, minmax(100px,249px));
-        grid-template-rows: repeat(4, minmax(100px,338px));
+        grid-template-columns: repeat(4, minmax(100px,349px));
+        grid-template-rows: repeat(2, minmax(100px,398px));
+        margin-bottom: 10rem;
+        padding: 0;
         }
             .topseller .card-box {
                 background-color: var(--color-grey-1);
@@ -667,19 +710,6 @@ background-color: #0e153d;
                 position: relative;
             }
         
-                /* .topseller .card-box .category-box {
-                    position: absolute;
-                    width: 100%;
-                    left: 0px;
-                    bottom: 0px;
-                    border-radius: 0 var(--border-radius-small) 0 0;
-                    background-color: var(--color-theme-dark);
-                    color: var(--color-theme);
-                    padding: 0.5rem 1rem;
-                    font-weight: var(--font-weight-medium);
-                    height: 40px;
-                    transition: 0.2s;
-                } */
 .topseller #card1 {
     grid-column: 1/3;
     grid-row: 1/3;
@@ -696,18 +726,18 @@ background-color: #0e153d;
 
 .topseller .card {
     position: relative;
-    height: 700px;
+    height: 810px;
     overflow: hidden;
     border: 1px solid #eeeeee;
     background-color: var(--color-grey-3);
 }
 .topseller .card img {
-    height: 700px;
+    height: 810px;
 }
 .topseller .card .card-body {
     position: absolute;
     bottom: 0;
-    height: 10%;
+    height: 8%;
     width: 100%;
     color: var(--color-white);
     z-index: 1;
@@ -715,7 +745,7 @@ background-color: #0e153d;
     font-size: 1rem;
 }
 .topseller .card:hover .card-body {
-    height: 30%;
+    height: 25%;
 }
 .topseller .card .card-body button {
     background-color: transparent;
@@ -783,23 +813,24 @@ background-color: #0e153d;
             }
 
 /* cards small */
+
 .topseller {
     margin-top: 4rem;
 }
 .topseller #cardsmall {
     position: relative;
-    height: 350px;
+    height: 400px;
     overflow: hidden;
     border: 1px solid #eeeeee;
     background-color: var(--color-grey-3);
 }
 .topseller #cardsmall img {
-    height: 350px;
+    height: 400px;
 }
 .topseller #cardsmall .card-body {
     position: absolute;
     bottom: 0;
-    height: 20%;
+    height: 15%;
     width: 100%;
     color: var(--color-white);
     z-index: 1;
@@ -807,7 +838,7 @@ background-color: #0e153d;
     font-size: 1rem;
 }
 .topseller #cardsmall:hover .card-body {
-    height: 55%;
+    height: 45%;
 }
 .topseller #cardsmall .card-body button {
     background-color: transparent;
@@ -1026,6 +1057,79 @@ background-color: #0e153d;
     .facegoog .facebook-button button:hover {
         filter: brightness(80%);
     }
+
+    /* subscribe */
+    .subscribe .container {
+        display: flex;
+
+
+        height: 313px;
+
+    }
+    .subscribe .content {
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        padding-right: 5rem;
+    }
+    .subscribe .content h1 {
+        font-family: var(--font-play);
+        font-size: var(--font-size-36);
+        font-weight: var(--font-weight-bold);
+    }
+    
+    .subscribe .content span {
+            font-weight: var(--font-weight-bold);
+            color: var(--color-theme);
+        }
+        .subscribe .content p {
+                font-size: var(--font-size-16);
+            }
+            .subscribe .search #searchboxform {
+        border-radius: var(--border-radius-medium);
+        height: 45px;
+        margin: auto;
+        position: relative;
+    }
+    .subscribe .search #searchboxform input {
+        position: absolute;
+        border-radius: var(--border-radius-medium);
+        height: 100%;
+        width: 80%;
+        outline: none;
+        border: 1px solid var(--color-grey-2);
+        padding-left: 1.1rem;
+        transition: 0.1s;
+    }
+    .subscribe .search #searchboxform input:hover {
+        border: 1px solid var(--color-grey-0);
+    }
+    .subscribe .search #searchboxform button {
+            position: absolute;
+            top: 0;
+            right: 10%;
+            width: 25%; 
+            height: 100%;
+            background-color: var(--color-theme);
+            color: #ffffff;
+            border: none;
+            border-radius: 2rem;
+            transition: 0.3s;
+            font-weight: var(--font-weight-regular);
+            font-size: var(--font-size-16);
+            font-family: var(--font-roboto);
+        }
+        .subscribe .search #searchboxform button:hover {
+                background-color: var(--color-theme-dark);
+                color: #ffffff;
+            }
+            .subscribe #grey {
+                background-color: var(--color-grey-1);
+                height: 313px;
+                width: 50%;
+            }
+/* Footer */
+
 .foot {
     background-color: #080C24;
     height: 80px;
